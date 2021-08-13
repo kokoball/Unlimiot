@@ -4,3 +4,5 @@ db.sqlite3
 /venv_be
 __pyache__/
 django.log
+*.log
+.cache
