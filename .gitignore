@@ -1,0 +1,6 @@
+db.sqlite3
+/media
+/staticfiles/media
+/venv
+__pyache__/
+django.log
