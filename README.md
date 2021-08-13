@@ -1,2 +1,2 @@
-# 11th Team Repository
-### 프로토타입을 소개해주세요!
+# Unlimiot(언리미오, Unlimited idiots, 11th team) Repository
+### Introduction
