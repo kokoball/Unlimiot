@@ -16,8 +16,8 @@
 		<!-- Main -->
         <section id="toolbar">
             <div class="toolbar-logo"><img src="images/gray_box.png"></div>
-            <div class="toolbar-text"><a href="main_RegionSelection_Page_1.html"><span style="min-width: 55px;">광주전체</span><img src="images/icon/bottom_arrow.svg"></a></div>
-            <div class="toolbar-search"><a href="search_Page_1.htmltime_Sale__Page_1.html"><img src="images/icon/search.svg"></a></div>
+            <div class="toolbar-text"><a href="mainRegionSelectionPage_1.html"><span style="min-width: 55px;">광주전체</span><img src="images/icon/bottom_arrow.svg"></a></div>
+            <div class="toolbar-search"><a href="searchPage_1.html"><img src="images/icon/search.svg"></a></div>
         </section>
 
         <!-- Banner Event-->
@@ -95,11 +95,11 @@
 
         <!-- Time Sale -->
         <section id="time-sale">
-            <div class="title">
+            <div class="content-title">
                 <div>
-                    <p>15:00</p>
-                    <p>타임</p>
-                    <p>판매중</p>
+                    <p>오늘만 특가</p>
+                    <p>타임세일</p>
+                    <p class="color-00d1c4">판매중</p>
                 </div>
                 <div><img src="images/icon/arrow.svg"></div>
             </div>
@@ -185,65 +185,38 @@
         </section>
 
         <!-- 10 Minute Near Shop -->
-        <section id="near-shop">
-            <div class="title">
+        <section id="trip-theme">
+            <div class="content-title">
                 <div>
-                    <p>걸어서 10분 이내 음식점</p>
-                    <p></p>
-                    <p></p>
+                    <p>어디에서나, 여행은 살아보는거야!</p>
                 </div>
                 <div><img src="images/icon/arrow.svg"></div>
             </div>
-            <div class="swiper-container near-shop-Swiper">
+            <div class="swiper-container trip-theme-Swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="near_Shop_Page_1.html">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
-                            <div class="slide-text">
-                                <p>가게명_1</p>
-                                <p>혼밥가능</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="silde-img"><img src="images/DSC017362.jpg"></div>
-                        <div class="slide-text">
-                            <p>가게명_1</p>
-                            <p>혼밥가능</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="silde-img"><img src="images/cody05.jpg"></div>
-                        <div class="slide-text">
-                            <p>가게명_1</p>
-                            <p>혼밥가능</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="silde-img"><img src="images/cody05.jpg"></div>
-                        <div class="slide-text">
-                            <p>가게명_1</p>
-                            <p>혼밥가능</p>
-                        </div>
-                    </div>
+                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
+                    <div class="swiper-slide"><img src="images/DSC017362.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
+                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
+                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
+                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
+                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
                 </div>
             </div>
-
-            
         </section>
+        
 
         <!-- Bottom Menu Bar -->
         <div id="bottom-menu">
-            <div><a href="main_Page_1.html"><img src="images/icon/home_icon.svg">
+            <div><a href="mainPage_1.html"><img src="images/icon/home_icon.svg">
                     <div>홈</div>
                 </a></div>
-            <div><a href="near_Shop_Page_1.html"><img src="images/icon/map_icon.svg">
+            <div><a href="nearShopPage_1.html"><img src="images/icon/map_icon.svg">
                     <div>내 주변</div>
                 </a></div>
-            <div><a href="order_History.html"><img src="images/icon/order_icon.svg">
+            <div><a href="orderHistory.html"><img src="images/icon/order_icon.svg">
                     <div>주문내역</div>
                 </a></div>
-            <div><a href="my_Page_1.html"><img src="images/icon/my_icon.svg">
+            <div><a href="myPage_1.html"><img src="images/icon/my_icon.svg">
                     <div>나의 팩밀</div>
                 </a></div>
         </div>
@@ -294,17 +267,6 @@
         });
     </script>
 
-    <!-- Near Shop Swiper -->
-    <script>
-        var swiper = new Swiper(".near-shop-Swiper", {
-            slidesPerView: "auto",
-            spaceBetween: 10,
-            pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            },
-        });
-    </script>
 
 </body>
 </html>

@@ -264,8 +264,9 @@ body {
 #time-sale {
   margin-bottom: 7%;
 }
-#time-sale .title {
+.content-title {
   display: flex;
+  margin-top: 3%;
 }
 #time-sale a {
   text-decoration: none;
@@ -279,23 +280,24 @@ body {
   color: black;
 }
 
-#time-sale .title :nth-child(1) {
+.content-title :nth-child(1) {
   flex: 1;
   float: left;
   font-size: 70%;
   margin-bottom: 5%;
 }
-#time-sale .title :nth-child(1) p {
+.content-title :nth-child(1) p {
   display: inline-block;
   height: 100%;
   margin: 0 0.5% 0 0.5%;
   font-weight: bold;
   font-size: 1.4em;
 }
-#time-sale .title :nth-child(1) :nth-child(3) {
+
+.color-00d1c4 {
   color: #00d1c4;
 }
-#time-sale .title :nth-child(2) img {
+.content-title :nth-child(2) img {
   float: right;
 }
 
@@ -427,50 +429,29 @@ body {
   }
 }
 
-/* Near shop */
-#near-shop {
-  margin-bottom: 7%;
+/* trip-theme */
+#trip-theme {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  height: auto;
 }
-#near-shop .title {
-  display: flex;
-}
-#near-shop .title :nth-child(1) {
-  flex: 1;
-  float: left;
-  font-size: 70%;
-  margin-bottom: 5%;
-}
-#near-shop .title :nth-child(1) p {
-  display: inline-block;
-  height: 100%;
-  margin: 0 0.5% 0 0.5%;
-  font-weight: bold;
-  font-size: 1.4em;
-}
-#near-shop .title :nth-child(1) :nth-child(3) {
-  color: #00d1c4;
-}
-#near-shop .title :nth-child(2) img {
-  float: right;
-}
-/* Time Sale Swiper */
-#near-shop .swiper-wrapper {
-  width: 50%;
-  height: 100%;
-}
-
-#near-shop .swiper-container .mySwiper {
+#trip-theme .swiper-wrapper {
   width: 100%;
   height: 100%;
 }
-#near-shop .swiper-slide {
+/* #trip-theme .swiper-slide img {
+  width: 100%;
+  height: 100%;
+} */
+
+#trip-theme .swiper-container .mySwiper {
+  width: 100%;
+  height: 100%;
+}
+#trip-theme .swiper-slide {
   font-size: 18px;
   background: #fff;
   /* Center slide text vertically */
-  /* display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; */
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -480,101 +461,80 @@ body {
   -webkit-align-items: center;
   align-items: center;
 }
-#near-shop .swiper-slide img {
+#trip-theme .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
-  margin: 0;
   object-fit: cover;
+  border-radius: 1em;
 }
-#near-shop .swiper-slide {
+#trip-theme .swiper-slide {
   width: 75%;
-  margin: 0;
 }
-#near-shop .swiper-slide .silde-img {
-  border-radius: 10%;
-  overflow: hidden;
-}
-#near-shop .swiper-slide .silde-img img {
-  object-fit: cover;
-}
-#near-shop .slide-text {
-  width: 100%;
-  height: 100%;
-  margin: 5% 3% 0 3%;
-  float: left;
-}
-#near-shop .slide-text p {
-  margin: 0;
-}
-#near-shop .slide-text :nth-child(1) {
-  font-size: 1em;
+#trip-theme .swiper-slide > span {
+  font-size: 80%;
   font-weight: bold;
-  display: block;
 }
-#near-shop .slide-text :nth-child(2) {
-  font-size: 0.8em;
-}
-#near-shop a {
-  text-decoration: none;
-}
-#near-shop a:link {
-  text-decoration: none;
-  color: black;
-}
-#near-shop a:visited {
-  text-decoration: none;
-  color: black;
-}
-/* near-shop meida queri */
+
+/* banner meida queri */
 @media (min-width: 280px) {
   /* Galaxy Fold */
-  #near-shop .swiper-slide .silde-img img {
-    min-width: 108px;
-    min-height: 108px;
-    width: 100%;
-    height: 100%;
+  #trip-theme .swiper-slide img {
+    width: 216px;
+    height: 216px;
+  }
+  #trip-theme .swiper-slide {
+    width: 70%;
   }
 }
 @media (min-width: 320px) {
   /* iPhone 5/SE */
-  #near-shop .swiper-slide .silde-img img {
-    min-width: 108px;
-    min-height: 108px;
+  #trip-theme .swiper-slide img {
+    width: 216px;
+    height: 216px;
   }
 }
 @media (min-width: 375px) {
   /* iPhone X */
-  #near-shop .swiper-slide .silde-img img {
-    min-width: 116px;
-    min-height: 116px;
+  #trip-theme .swiper-slide img {
+    width: 233px;
+    height: 233px;
   }
 }
 @media (min-width: 414px) {
   /* iPhone 6/7/8 Plus */
-  #near-shop .swiper-slide .silde-img img {
-    min-width: 130px;
-    min-height: 130px;
+  #trip-theme .swiper-slide img {
+    width: 260px;
+    height: 260px;
   }
 }
 @media (min-width: 520px) {
   /* Surface Duo */
-  #near-shop .swiper-slide .silde-img img {
-    min-width: 166px;
-    min-height: 166px;
+  #trip-theme .swiper-slide img {
+    width: 260px;
+    height: 260px;
+  }
+  #trip-theme .swiper-slide {
+    width: 65%;
   }
 }
 @media (min-width: 600px) {
-  #near-shop .swiper-slide .silde-img img {
-    min-width: 192px;
-    min-height: 192px;
+  #trip-theme .swiper-slide img {
+    width: 333px;
+    height: 333px;
+  }
+  #trip-theme .swiper-slide {
+    width: 65%;
   }
 }
 @media (min-width: 768px) {
   /* ipad */
-  #near-shop .swiper-slide .silde-img img {
-    min-width: 230px;
-    min-height: 230px;
+  #trip-theme .swiper-slide img {
+    width: 460px;
+    height: 460px;
+  }
+  #trip-theme .swiper-slide {
+    width: 75%;
   }
 }
 

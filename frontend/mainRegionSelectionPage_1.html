@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-sclae=1, maximum-scale=1">
+	<link rel="stylesheet" href="assets/css/region_Selection.css" />
+    <script
+	  src="https://code.jquery.com/jquery-3.6.0.js"
+	  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	  crossorigin="anonymous"></script>
+    <title>Region_Selection</title>
+</head>
+<body>
+    <div id="wrap">
+		<!-- Toolbar -->
+        <section id="toolbar">
+            <div class="RS-close"><a href="mainPage_1.html"><img src="images/icon/close_icon.svg"></a></div>
+        </section>
+
+        <!-- Region Category -->
+        <section id="tab-Menu">
+            <div class="allWrap">    
+                <div class="tabBox">
+                    <p class="tab-link current" data-tab="tab-1">
+                        전체
+                    </p>
+                    <p class="tab-link"  data-tab="tab-2">
+                        서울
+                    </p>
+                    <p class="tab-link"  data-tab="tab-3">
+                        광주
+                    </p>
+                    <p class="tab-link"  data-tab="tab-3">
+                        목포
+                    </p>
+                </div>
+                <div id="tab-1" class="tab-content current">
+                    <div class="content1"><a href="mainPage_1.jsp?region=광주 전체"><p id="content-p">전 지역</p></a></div>
+					<div class="content1"><a href="mainPage_1.jsp?region=동구"><p id="content-p">동구</p></a></div>
+                    <div class="content1"><a href="mainPage_1.jsp?region=서구"><p id="content-p">서구</p></a></div>
+                    <div class="content1"><a href="mainPage_1.jsp?region=남구"><p id="content-p">남구</p></a></div>
+                    <div class="content1"><a href="mainPage_1.jsp?region=북구"><p id="content-p">북구</p></a></div>
+                    <div class="content1"><a href="mainPage_1.jsp?region=광산구"><p id="content-p">광산구</p></a></div>
+                </div>
+                <div id="tab-2" class="tab-content">
+                    <div class="content1"><a href="mainPage_1.jsp?region=광주 전체"><p id="content-p">전 지역</p></a></div>
+					<div class="content1"><a href="mainPage_1.jsp?region=동구"><p id="content-p">동구</p></a></div>
+                    <div class="content1"><a href="mainPage_1.jsp?region=서구"><p id="content-p">서구</p></a></div>
+                    <div class="content1"><a href="mainPage_1.jsp?region=남구"><p id="content-p">남구</p></a></div>
+                    <div class="content1"><a href="mainPage_1.jsp?region=북구"><p id="content-p">북구</p></a></div>
+                    <div class="content1"><a href="mainPage_1.jsp?region=광산구"><p id="content-p">광산구</p></a></div>
+                </div>
+                <div id="tab-3" class="tab-content">
+                    <div class="content1"><a href="mainPage_1.jsp?region=광주 전체"><p id="content-p">전 지역</p></a></div>
+					<div class="content1"><a href="mainPage_1.jsp?region=동구"><p id="content-p">동구</p></a></div>
+                    <div class="content1"><a href="mainPage_1.jsp?region=서구"><p id="content-p">서구</p></a></div>
+                    <div class="content1"><a href="mainPage_1.jsp?region=남구"><p id="content-p">남구</p></a></div>
+                    <div class="content1"><a href="mainPage_1.jsp?region=북구"><p id="content-p">북구</p></a></div>
+                    <div class="content1"><a href="mainPage_1.jsp?region=광산구"><p id="content-p">광산구</p></a></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Bottom Menu Bar -->
+        <div id="bottom-menu">
+            <button>적용</button>
+        </div>
+	</div>
+
+    <!-- Scripts -->
+	<script src="assets/js/regionSP.js"></script> 
+    <script>
+        $(function(){
+            $('#content-p').click(function(){
+                if($("#content-img").css("display") == "none"){
+                    $('#content-img').show();
+                }
+                else if($("#content-img").css("display") != "none"){
+                    $('#content-img').hide();
+                }
+            });
+        });
+    </script>
+    <script src="assets/js/tablink.js"></script>
+</body>
+</html>

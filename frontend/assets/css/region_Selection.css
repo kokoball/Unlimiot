@@ -107,8 +107,19 @@ body {
 }
 /* Region Selection page 1 p tag a tag 수정 */
 #content-p {
-  margin: 3%;
+  margin: 1%;
+  color: black;
 }
+#tab-1 > div {
+  border-bottom: 1px solid #e1e1e1;
+}
+#tab-2 > div {
+  border-bottom: 1px solid #e1e1e1;
+}
+#tab-3 > div {
+  border-bottom: 1px solid #e1e1e1;
+}
+
 #tab-1 > a {
   margin: 0;
   text-decoration: none;
