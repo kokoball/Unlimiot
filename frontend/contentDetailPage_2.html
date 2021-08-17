@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-sclae=1, maximum-scale=1">
+	<link rel="stylesheet" href="assets/css/shop_Search.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.6.0.js"
+	  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	  crossorigin="anonymous"></script>
+    <title>Shop Search Page_1</title>
+</head>
+<body>
+    <!-- Banner -->
+    <section id="banner-1">
+        <img src="images/icon/arrow-left-white.svg">
+        <img src="images/icon/like_off.svg">
+    </section>
+
+    <div id="wrap">
+        <!-- Shop Tab Menu  -->
+        <section id="tab-Menu">
+            <div class="allWrap">
+                <div class="text-content">
+                    <h3>체험활동 제목</h3>
+                    <P>별점 : ⭐⭐⭐⭐</P>
+                    <P>위치 : ~~~~~</P>
+                </div>     
+                <div class="tabBox">
+                    <p class="tab-link current" data-tab="tab-1">
+                        프로그램
+                    </p>
+                    <p class="tab-link"  data-tab="tab-2">
+                        제공항목
+                    </p>
+                    <p class="tab-link"  data-tab="tab-3">
+                        리뷰
+                    </p>
+                </div>
+                <div id="tab-1" class="tab-content current">
+                    <h5>현장 활동 사진</h5>
+                    <section id="banner">
+                        <div class="swiper-container banner-Swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/cody05.jpg"></div>
+                                <div class="swiper-slide"><img src="images/DSC017362.jpg"></div>
+                                <div class="swiper-slide"><img src="images/cody05.jpg"></div>
+                                <div class="swiper-slide"><img src="images/cody05.jpg"></div>
+                                <div class="swiper-slide"><img src="images/cody05.jpg"></div>
+                                <div class="swiper-slide"><img src="images/cody05.jpg"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <h5>현장 활동 설명</h5>
+                    <span style="padding: 5%;">dffdddddddddddddddddddddddddd</span>
+                </div>
+                </div>
+                <div id="tab-2" class="tab-content">
+                    <section id="time-sale">
+                        <div class="content-title">
+                            <div style="margin: 0;">
+                                <p style="padding: 3% 3% 1.5% 3%;">제공 항목</p>
+                            </div>
+                        </div>
+                        <div class="swiper-container time-sale-Swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="time_Sale__Page_1.html">
+                                        <div class="silde-img"><img src="images/DSC017362.jpg"></div>
+                                        <div class="slide-text">
+                                            <p style="text-align: center;">체험활동 장비</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="time_Sale__Page_1.html">
+                                        <div class="silde-img"><img src="images/DSC017362.jpg"></div>
+                                        <div class="slide-text">
+                                            <p style="text-align: center;">캠핑 노지</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="time_Sale__Page_1.html">
+                                        <div class="silde-img"><img src="images/DSC017362.jpg"></div>
+                                        <div class="slide-text">
+                                            <p style="text-align: center;">편의 시설</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="tab-3" class="tab-content">
+                    <!-- 리뷰가 없을 경우 -->
+                    <!-- <div class="no-review"> 
+                        <div>
+                            <img src="./images/icon/alert-circle.svg">
+                            <div>주문   내역이 존재하지 않습니다.</div>
+                        </div>
+                    </div> -->
+                    <div class="review-complete">
+                        <div><button>📝리뷰작성하기</button></div>
+                        <div>
+                            <div>사진리뷰만보기
+                                <label class="switch">
+                                    <input id="toggle-button" name="toggle-i" type="checkbox">
+                                    <div class="slider round"></div>
+                                </label>
+                            </div>
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">
+                                    <p class="t2">최신순</p>
+                                    <img class="t3" src="images/icon/bottom_arrow.svg">
+                                </button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#near"> 최신순</a>
+                                    <a href="#discount">리뷰 많은 순</a>
+                                    <a href="#follower">찜 많은 순</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toggle-div img">
+                            <a href="review_page_1.html">
+                                <div style="font-size: 90%;">닉네임1 : adfd</div>
+                                <img class="toggle-img" src="/User/images/gray_box.png">
+                                <div>바람 시원하고 공기도 좋아요~~</div>
+                            </a>
+                        </div>
+                        <div class="toggle-div text">
+                            <a href="review_page_1.html">
+                                <div style="font-size: 90%;">닉네임2 : dfd</div>
+                                <div>우리 강아지가 엄청 좋아했어요!!</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Bottom Menu Bar -->
+        <div id="bottom-menu">
+            <div><a href="mainPage_1.html"><img src="images/icon/home_icon.svg">
+                    <div>홈</div>
+                </a></div>
+            <div><a href="nearShopPage_1.html"><img src="images/icon/map_icon.svg">
+                    <div>내 주변</div>
+                </a></div>
+            <div><a href="orderHistory.html"><img src="images/icon/order_icon.svg">
+                    <div>커뮤니티</div>
+                </a></div>
+            <div><a href="myPage_1.html"><img src="images/icon/my_icon.svg">
+                    <div>나의 네트</div>
+                </a></div>
+        </div>
+	</div>
+    <!-- script -->
+    <!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Banner Swiper -->
+    <script>
+        var swiper = new Swiper(".banner-Swiper", {
+          slidesPerView: "auto",
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+    </script>
+
+    <!-- Time Sale Swiper -->
+    <script>
+        var swiper = new Swiper(".time-sale-Swiper", {
+            slidesPerView: "auto",
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+        });
+    </script>
+
+    <script>
+        $('.tab-link').click(function () {
+        var tab_id = $(this).attr('data-tab');
+
+        $('.tab-link').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#" + tab_id).addClass('current');
+        });
+    </script>
+    <script src="/pacmeal_frame/User/assets/js/dropbox.js">
+    
+    </script>
+    <script src="/pacmeal_frame/User/assets/js/toggle_img.js" defer></script>
+</body>
+</html>

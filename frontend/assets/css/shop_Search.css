@@ -27,25 +27,25 @@ a:visited {
   color: black;
 }
 /* Search Page */
-#banner {
+#banner-1 {
   background-color: #c4c4c4;
   width: 100%;
   height: 27vh;
   min-height: 180px;
 }
-#banner > img:nth-child(1) {
+#banner-1 > img:nth-child(1) {
   margin: 3%;
   float: left;
   min-width: 30px;
   min-height: 30px;
 }
-#banner > img:nth-child(2) {
+#banner-1 > img:nth-child(2) {
   margin: 3%;
   float: right;
   min-width: 30px;
   min-height: 30px;
 }
-#banner > div {
+#banner-1 > div {
   margin: 3%;
   margin-bottom: 0;
   float: right;
@@ -53,20 +53,20 @@ a:visited {
   min-width: 30px;
   min-height: 30px;
 }
-#banner > div > h5 {
+#banner-1 > div > h5 {
   margin: 0;
   font-weight: normal;
   text-decoration: line-through;
 }
-#banner > div > div {
+#banner-1 > div > div {
   min-width: 100px;
 }
-#banner > div > div > h4 {
+#banner-1 > div > div > h4 {
   margin: 0;
   margin-right: 3%;
   display: inline-block;
 }
-#banner > div > div > :nth-child(1) {
+#banner-1 > div > div > :nth-child(1) {
   color: #ff0000;
 }
 
@@ -80,9 +80,8 @@ a:visited {
   padding: 5% 5% 0 5%;
 }
 .text-content {
-  text-align: center;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  text-align: left;
+  margin: 3% 5%;
 }
 .text-content p {
   margin: 0;
@@ -624,5 +623,282 @@ input:checked + .slider:before {
     line-height: 1.7;
     padding: auto;
     font-size: 140%;
+  }
+}
+/* banner swiper */
+#banner {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  height: auto;
+}
+#banner .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+/* #banner .swiper-slide img {
+  width: 100%;
+  height: 100%;
+} */
+
+#banner .swiper-container .mySwiper {
+  width: 100%;
+  height: 100%;
+}
+#banner .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#banner .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#banner .swiper-slide {
+  width: 75%;
+}
+
+/* banner meida queri */
+@media (min-width: 280px) {
+  /* Galaxy Fold */
+  #banner .swiper-slide img {
+    width: 216px;
+    height: 216px;
+  }
+  #banner .swiper-slide {
+    width: 70%;
+  }
+}
+@media (min-width: 320px) {
+  /* iPhone 5/SE */
+  #banner .swiper-slide img {
+    width: 216px;
+    height: 216px;
+  }
+}
+@media (min-width: 375px) {
+  /* iPhone X */
+  #banner .swiper-slide img {
+    width: 233px;
+    height: 233px;
+  }
+}
+@media (min-width: 414px) {
+  /* iPhone 6/7/8 Plus */
+  #banner .swiper-slide img {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (min-width: 520px) {
+  /* Surface Duo */
+  #banner .swiper-slide img {
+    width: 260px;
+    height: 260px;
+  }
+  #banner .swiper-slide {
+    width: 65%;
+  }
+}
+@media (min-width: 600px) {
+  #banner .swiper-slide img {
+    width: 333px;
+    height: 333px;
+  }
+  #banner .swiper-slide {
+    width: 65%;
+  }
+}
+@media (min-width: 768px) {
+  /* ipad */
+  #banner .swiper-slide img {
+    width: 460px;
+    height: 460px;
+  }
+  #banner .swiper-slide {
+    width: 75%;
+  }
+}
+
+/* Time Sale */
+#time-sale {
+  margin-bottom: 7%;
+}
+.content-title {
+  display: flex;
+  margin-top: 3%;
+}
+#time-sale a {
+  text-decoration: none;
+}
+#time-sale a:link {
+  text-decoration: none;
+  color: black;
+}
+#time-sale a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.content-title :nth-child(1) {
+  flex: 1;
+  float: left;
+  font-size: 70%;
+  margin-bottom: 5%;
+}
+.content-title :nth-child(1) p {
+  display: inline-block;
+  height: 100%;
+  margin: 0 0.5% 0 0.5%;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.color-00d1c4 {
+  color: #00d1c4;
+}
+.content-title :nth-child(2) img {
+  float: right;
+}
+
+/* Time Sale Swiper */
+#time-sale .swiper-wrapper {
+  width: 50%;
+  height: 100%;
+}
+
+#time-sale .swiper-container .mySwiper {
+  width: 100%;
+  height: 100%;
+}
+#time-sale .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#time-sale .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+}
+#time-sale .swiper-slide {
+  width: 75%;
+  margin: 5%;
+}
+#time-sale .swiper-slide .silde-img {
+  border-radius: 10%;
+  overflow: hidden;
+}
+#time-sale .swiper-slide .silde-img img {
+  object-fit: cover;
+}
+#time-sale .slide-text {
+  width: 100%;
+  height: 100%;
+  margin: 5% 3% 0 3%;
+  float: left;
+}
+#time-sale .slide-text p {
+  margin: 0;
+}
+#time-sale .slide-text :nth-child(1) {
+  font-size: 1em;
+  font-weight: bold;
+  display: block;
+}
+#time-sale .slide-text :nth-child(2) {
+  font-size: 0.8em;
+}
+#time-sale .slide-text > :nth-child(3) {
+  font-size: 0.8em;
+}
+#time-sale .slide-text :nth-child(4) {
+  font-size: 0.8em;
+  display: flex;
+}
+#time-sale .slide-text :nth-child(4) :nth-child(1) {
+  color: #ff0000;
+}
+#time-sale .slide-text :nth-child(4) :nth-child(3) {
+  font-weight: bold;
+}
+
+/* time meida queri */
+@media (min-width: 280px) {
+  /* Galaxy Fold */
+  #time-sale .swiper-slide .silde-img img {
+    min-width: 108px;
+    min-height: 108px;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 320px) {
+  /* iPhone 5/SE */
+  #time-sale .swiper-slide .silde-img img {
+    min-width: 108px;
+    min-height: 108px;
+  }
+}
+@media (min-width: 375px) {
+  /* iPhone X */
+  #time-sale .swiper-slide .silde-img img {
+    min-width: 116px;
+    min-height: 116px;
+  }
+}
+@media (min-width: 414px) {
+  /* iPhone 6/7/8 Plus */
+  #time-sale .swiper-slide .silde-img img {
+    min-width: 130px;
+    min-height: 130px;
+  }
+}
+@media (min-width: 520px) {
+  /* Surface Duo */
+  #time-sale .swiper-slide .silde-img img {
+    min-width: 166px;
+    min-height: 166px;
+  }
+}
+@media (min-width: 600px) {
+  #time-sale .swiper-slide .silde-img img {
+    min-width: 192px;
+    min-height: 192px;
+  }
+}
+@media (min-width: 768px) {
+  /* ipad */
+  #time-sale .swiper-slide .silde-img img {
+    min-width: 230px;
+    min-height: 230px;
   }
 }
