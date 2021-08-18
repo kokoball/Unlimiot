@@ -3,7 +3,7 @@
 # 네트(Nature Trip, Network)
  - 해커톤명 : <a href="https://oasis-hackathon.kr/">제2회 오아시스 해커톤</a>
  - 팀명 : 언리미오(Unlimiot)(<a href="https://github.com/kokoball">고병표</a>, <a href="https://github.com/jinhgoh">고진형</a>, 백원기, 최명진)
- - 서비스명: 네트(Nature Trip, Network)
+ - 서비스명 : 네트(Nature Trip, Network)
  - 기간 : 2021.08.12 ~ 2021.08.18
 <br>
 
