@@ -28,6 +28,14 @@ def ips(request):
 def ip1(request):
     return render(request, 'main_app/indexPage_1.html')
 
+
+def mrs(request):
+    return render(request, 'main_app/mainRegionSelectionPage_1.html')
+
+
+def sp1(request):
+    return render(request, 'main_app/searchPage_1.html')
+
 # f = open("static/food.csv", 'r', encoding='UTF8')
 # l = []
 # lines = f.readlines()
