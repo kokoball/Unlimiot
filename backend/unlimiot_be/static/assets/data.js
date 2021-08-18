@@ -72,10 +72,130 @@ var data = [
       lng: '127.01856875307746',
       img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
     },{
-      title: '카페지인4',
+      title: '카페지인5',
       partnership: '2잔 이상 구매시 10% 할인',
       lat: '34.79686645699486',
       lng: '127.6685534300374',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '35.43186110679673',
+      lng: '127.42546488702531',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '35.259171947378334',
+      lng: '126.55585001250141',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '36.06740797427603',
+      lng: '126.71520352121836',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인6',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '35.94402240807474',
+      lng: '126.72658591474031',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '34.57713975859865',
+      lng: '126.5800208697143',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '34.56444692362574',
+      lng: '126.8459239306881',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '34.371277478982535',
+      lng: '126.71258703344617',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인7',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '34.446858200198726',
+      lng: '126.19372564937075',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '34.99460502258792',
+      lng: '127.38461298120744',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '35.59275531757073',
+      lng: '126.8985551814836',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '35.23346965466413',
+      lng: '127.50538593829634',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인8',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '35.12927387869291',
+      lng: '127.78083986152764',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '35.108612170622166',
+      lng: '126.28499015975432',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '34.813537746391724',
+      lng: '126.38555605486796',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '36.3262708171871',
+      lng: '126.58858724670783',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인9',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '36.121670141032084',
+      lng: '126.95857717325826',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '35.70571835165165',
+      lng: '127.55643279108507',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '35.28284993563477',
+      lng: '126.99749937841862',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '34.927771529671745',
+      lng: '126.64871835741985',
+      img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
+    },{
+      title: '카페지인9',
+      partnership: '2잔 이상 구매시 10% 할인',
+      lat: '34.76773434889422',
+      lng: '126.72012948682482',
       img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
     }
 ]
