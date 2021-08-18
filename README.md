@@ -32,8 +32,8 @@
 
 
 ## 팀원별 역할 
-* <a href="https://github.com/kokoball">고병표</a> : 프론트엔드 개발
-* <a href="https://github.com/jinhgoh">고진형</a> : 백엔드 개발
-* 백원기 : 프론트엔드 개발, Google API
-* 최명진 : 프론트엔드 개발
+* <a href="https://github.com/kokoball">고병표</a> : 개발자
+* <a href="https://github.com/jinhgoh">고진형</a> : 개발자
+* 백원기 : 기획자
+* 최명진 : 디자이너
 
