@@ -1,0 +1,195 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-sclae=1, maximum-scale=1">
+	<link rel="stylesheet" href="{% static "assets/css/main_content.css" %}" />
+    <script src="{% static "assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" %}"></script>
+        <link rel="stylesheet" href="{% static "assets/css/style2.css" %}"> 
+        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=5bh1zqbnws">
+        </script>
+    <script
+	  src="https://code.jquery.com/jquery-3.6.0.js"
+	  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	  crossorigin="anonymous"></script>
+    
+
+        <script type="text/javascript" src="{% static "assets/data.js" %}"></script>
+    <title>Near Shop Page</title>
+</head>
+<body>
+        <section id="toolbar">
+            <div class="TS-close-1"><a href="main_Page_1.html"><img src="{% static "images/icon/arrow-left.svg" %}"></a></div>
+            <div class="TS-close-2">내 주변</div>
+            <div class="TS-close-2"></div>
+        </section>
+
+        <section id="map-content">
+    <div id="wrap">
+		<!-- Toolbar -->
+        <div id="map" style="width:100%;height:100vh;"></div>
+                <div id="map"></div>
+            <div id="current">현위치</div>
+            <div id="jeonjucam">전캠</div>
+            <div id="specialcam">특캠</div>
+
+            <script>
+                var mapOptions = {
+                    center: new naver.maps.LatLng(35.84317580042795, 127.13167342246314),
+                    zoom: 15
+                };
+
+
+                var map = new naver.maps.Map('map', mapOptions);
+
+                var markerList = [];
+                var infowindowList = [];
+
+                for (var i in data) {
+                    var target = data[i];
+                    var latlng = new naver.maps.LatLng(target.lat, target.lng); //js파일에서 반대로 쓴듯
+                    marker = new naver.maps.Marker({
+                        map: map,
+                        position: latlng,
+                        icon: {
+                            //content: target.img,
+                            //size: new naver.maps.Size(24, 24),
+                            content: "<div class='marker'></div>",
+                            anchor: new naver.maps.Point(12, 12)
+                        },
+                    });
+
+                    //var content = `${target}` /////bactic, string 값을. 수 있다 아주 좋은 것. 속성값가져오는데  infowindow 생성준비란에 있음 
+                    var content = `<div class='infowindow_wrap'>
+                        <div class='infowindow_title>${target.title}</div>
+                        <div class='infowindow_content><${target.title}><br>${target.partnership}</div>
+                    </div>`
+
+                    var infowindow = new naver.maps.InfoWindow({
+                        content: content,
+                        backgroundColor: "#00ff0000", //어차피 css에서 다룰거라 애네들 투명하게 만들어주자 
+                        borderColor: "00ff0000"
+                        //anchorSize: new naver.maps.Size({0, 0}) //말풍선형태으 꼬리인데 0,0으로 고리표가 나오지 않게 함 
+                    })
+
+                    markerList.push(marker);
+                    infowindowList.push(infowindow);
+                }
+
+                for (var i = 0, ii = markerList.length; i < ii; i++) {
+                    naver.maps.Event.addListener(map, "click", ClickMap(i));
+                    naver.maps.Event.addListener(markerList[i], "click", getClickHandler(i));
+                }
+
+                function ClickMap(i) {
+                    return function() {
+                        var infowindow = infowindowList[i];
+                        infowindow.close()
+                    }
+                }
+
+                function getClickHandler(i) {
+                    return function () {
+                        var marker = markerList[i];
+                        var infowindow = infowindowList[i];
+                        if (infowindow.getMap()) {
+                            infowindow.close();
+                        } else {
+                            infowindow.open(map, marker)
+                        }
+                    }
+                }
+
+                $("#current").click(() => {
+                    if ("geolocation" in navigator) {
+                        navigator.geolocation.getCurrentPosition(function (position) {
+                            const lat = position.coords.latitude;
+                            const lng = position.coords.longitude;
+                            const latlng = new naver.maps.LatLng(lat, lng);
+                            marker = new naver.maps.Marker({
+                                map: map,
+                                position: latlng,
+                                icon: {
+                                    content: '<img class="pulse" draggable="false" unselectable="on" src="{% static "assets/images/geo_circle.png" %}" >',
+                                    anchor: new naver.maps.Point(11, 11)
+                                }
+                            });
+                            map.setZoom(14, false);
+                            map.panTo(latlng);
+                        })
+                    } else {
+                        alert("위치정보 사용 불가능");
+                    }
+                });
+
+                $("#jeonjucam").click(() => {
+                    function aa() {
+                        const latlng = new naver.maps.LatLng(35.84317580042795, 127.13167342246314);
+                        map.setZoom(15, false);
+                        map.panTo(latlng);
+                    }
+                    aa();
+                });
+
+                        $("#specialcam").click(() => {
+                    function aa() {
+                        const latlng = new naver.maps.LatLng(35.94205581773736, 126.9604682512279);
+                        map.setZoom(18, false);
+                        map.panTo(latlng);
+                    }
+                    aa();
+                });
+
+
+            </script>
+        </section>
+
+
+        
+        
+        
+
+
+        
+        <!-- Bottom Menu Bar -->
+        <div id="bottom-menu">
+            <div><a href="mainPage_1.html"><img src="{% static "images/icon/home_icon.svg" %}">
+                    <div>홈</div>
+                </a></div>
+            <div><a href="nearShopPage_1.html"><img src="{% static "images/icon/map_icon.svg" %}">
+                    <div>내 주변</div>
+                </a></div>
+            <div><a href="orderHistory.html"><img src="{% static "images/icon/order_icon.svg" %}">
+                    <div>커뮤니티</div>
+                </a></div>
+            <div><a href="myPage_1.html"><img src="{% static "images/icon/my_icon.svg" %}">
+                    <div>나의 네트</div>
+                </a></div>
+        </div>
+	</div>
+
+    <!-- Drop Down Scripts-->
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+            
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn' | '.t2' | '.t3')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+                }
+            }
+            }
+        }
+    </script>
+    <!-- kakao map api -->
+
+</body>
+</html>

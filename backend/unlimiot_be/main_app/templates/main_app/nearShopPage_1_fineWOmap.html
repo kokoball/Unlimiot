@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-sclae=1, maximum-scale=1">
+	<link rel="stylesheet" href="{% static "assets/css/main_content.css" %}" />
+    <script
+	  src="https://code.jquery.com/jquery-3.6.0.js"
+	  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	  crossorigin="anonymous"></script>
+    <title>Near Shop Page</title>
+</head>
+<body>
+    
+    <div id="wrap">
+		<!-- Toolbar -->
+        <section id="toolbar">
+            <div class="TS-close-1"><a href="main_Page_1.html"><img src="{% static "images/icon/arrow-left.svg" %}"></a></div>
+            <div class="TS-close-2">내 주변</div>
+            <div class="TS-close-2"></div>
+        </section>
+
+        <section id="map-content">
+            <div id="map"></div>
+        </section>
+
+
+
+        
+        <!-- Bottom Menu Bar -->
+        <div id="bottom-menu">
+            <div><a href="mainPage_1.html"><img src="{% static "images/icon/home_icon.svg" %}">
+                    <div>홈</div>
+                </a></div>
+            <div><a href="nearShopPage_1.html"><img src="{% static "images/icon/map_icon.svg" %}">
+                    <div>내 주변</div>
+                </a></div>
+            <div><a href="orderHistory.html"><img src="{% static "images/icon/order_icon.svg" %}">
+                    <div>커뮤니티</div>
+                </a></div>
+            <div><a href="myPage_1.html"><img src="{% static "images/icon/my_icon.svg" %}">
+                    <div>나의 네트</div>
+                </a></div>
+        </div>
+	</div>
+
+    <!-- Drop Down Scripts-->
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+            
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn' | '.t2' | '.t3')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+                }
+            }
+            }
+        }
+    </script>
+    <!-- kakao map api -->
+
+</body>
+</html>
