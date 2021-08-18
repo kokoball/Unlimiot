@@ -11,27 +11,37 @@
 	  crossorigin="anonymous"></script>
     <title>Main Page_1</title>
 </head>
+<style>
+    #main-banner{
+        width: 100%; 
+        height: 200px; 
+        margin-top: 4%;
+        background-image: url(images/banner-1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 1em;
+        text-align: center;
+    }
+    .slide-text > p:nth-child(1){
+        font-weight: bold;
+    }
+    .slide-text > p:nth-child(2){
+        font-size: 90%;
+    }
+</style>
 <body>
-    <div id="wrap">
-		<!-- Main -->
-        <section id="toolbar">
-            <div class="toolbar-logo"><img src="images/gray_box.png"></div>
-            <div class="toolbar-text"><a href="mainRegionSelectionPage_1.html"><span style="min-width: 55px;">광주전체</span><img src="images/icon/bottom_arrow.svg"></a></div>
-            <div class="toolbar-search"><a href="searchPage_1.html"><img src="images/icon/search.svg"></a></div>
-        </section>
+    <!-- Toolbar -->
+    <section id="toolbar" style="padding: 15px 20px 5px 20px; background-color: #3873b3;">
+        <div class="toolbar-logo"><img src="images/logo.png"></div>
+        <div class="toolbar-text"><a href="mainRegionSelectionPage_1.html"><span style="min-width: 55px; color: white;">광주전체</span><img src="images/icon/bottom_arrow.svg"></a></div>
+        <div class="toolbar-search"><a href="searchPage_1.html"><img src="images/icon/white-search.png"></a></div>
+    </section>
 
+    <div id="wrap">
         <!-- Banner Event-->
-        <section id="banner">
-            <div class="swiper-container banner-Swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/cody05.jpg"></div>
-                    <div class="swiper-slide"><img src="images/DSC017362.jpg"></div>
-                    <div class="swiper-slide"><img src="images/cody05.jpg"></div>
-                    <div class="swiper-slide"><img src="images/cody05.jpg"></div>
-                    <div class="swiper-slide"><img src="images/cody05.jpg"></div>
-                    <div class="swiper-slide"><img src="images/cody05.jpg"></div>
-                </div>
-            </div>
+        <section id="main-banner">
+            <h3>당신의 여행을 찾아보세요</h3>
+            <button>여행 추천받기</button>
         </section>
 
         <!-- Food Kinds-->
@@ -41,52 +51,42 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="contentDetailPage_1.html" style="display: flex; padding: 3% 5% 3% 0;">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
+                            <div class="silde-img"><img src="images/b1.jpg"></div>
                             <div class="slide-text"><p>서울</p><p>차로 4.5시간 거리</p></div>
                         </a>
                         <a href="contentDetailPage_1.html" style="display: flex; padding: 3% 5% 3% 0;">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
-                            <div class="slide-text"><p>서울</p><p>차로 4.5시간 거리</p></div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="contentDetailPage_1.html" style="display: flex; padding: 3% 5% 3% 0;">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
-                            <div class="slide-text"><p>서울</p><p>차로 4.5시간 거리</p></div>
-                        </a>
-                        <a href="contentDetailPage_1.html" style="display: flex; padding: 3% 5% 3% 0;">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
-                            <div class="slide-text"><p>서울</p><p>차로 4.5시간 거리</p></div>
+                            <div class="silde-img"><img src="images/b2.jpg"></div>
+                            <div class="slide-text"><p>부산</p><p>차로 3.5시간 거리</p></div>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="contentDetailPage_1.html" style="display: flex; padding: 3% 5% 3% 0;">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
-                            <div class="slide-text"><p>서울</p><p>차로 4.5시간 거리</p></div>
+                            <div class="silde-img"><img src="images/b3.jpeg"></div>
+                            <div class="slide-text"><p>대구</p><p>차로 3시간 거리</p></div>
                         </a>
                         <a href="contentDetailPage_1.html" style="display: flex; padding: 3% 5% 3% 0;">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
-                            <div class="slide-text"><p>서울</p><p>차로 4.5시간 거리</p></div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="contentDetailPage_1.html" style="display: flex; padding: 3% 5% 3% 0;">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
-                            <div class="slide-text"><p>서울</p><p>차로 4.5시간 거리</p></div>
-                        </a>
-                        <a href="contentDetailPage_1.html" style="display: flex; padding: 3% 5% 3% 0;">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
-                            <div class="slide-text"><p>서울</p><p>차로 4.5시간 거리</p></div>
+                            <div class="silde-img"><img src="images/b4.jpeg"></div>
+                            <div class="slide-text"><p>완주군</p><p>차로 2시간 거리</p></div>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="contentDetailPage_1.html" style="display: flex; padding: 3% 5% 3% 0;">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
-                            <div class="slide-text"><p>서울</p><p>차로 4.5시간 거리</p></div>
+                            <div class="silde-img"><img src="images/b5.jpeg"></div>
+                            <div class="slide-text"><p>양양군</p><p>차로 6시간 거리</p></div>
                         </a>
                         <a href="contentDetailPage_1.html" style="display: flex; padding: 3% 5% 3% 0;">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
-                            <div class="slide-text"><p>서울</p><p>차로 4.5시간 거리</p></div>
+                            <div class="silde-img"><img src="images/b6.jpg"></div>
+                            <div class="slide-text"><p>전주시</p><p>차로 1.5시간 거리</p></div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="contentDetailPage_1.html" style="display: flex; padding: 3% 5% 3% 0;">
+                            <div class="silde-img"><img src="images/b7.jpg"></div>
+                            <div class="slide-text"><p>속초시</p><p>차로 6시간 거리</p></div>
+                        </a>
+                        <a href="contentDetailPage_1.html" style="display: flex; padding: 3% 5% 3% 0;">
+                            <div class="silde-img"><img src="images/b8.jpg"></div>
+                            <div class="slide-text"><p>고성군</p><p>차로 6시간 거리</p></div>
                         </a>
                     </div>
                 </div>
@@ -97,9 +97,7 @@
         <section id="time-sale">
             <div class="content-title">
                 <div>
-                    <p>오늘만 특가</p>
-                    <p>타임세일</p>
-                    <p class="color-00d1c4">판매중</p>
+                    <p>인기 여행지 추천</p>
                 </div>
                 <div><img src="images/icon/arrow.svg"></div>
             </div>
@@ -107,75 +105,60 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="contentDetailPage_1.html">
-                            <div class="silde-img"><img src="images/DSC017362.jpg"></div>
+                            <div class="silde-img"><img src="images/c1.jpeg"></div>
                             <div class="slide-text">
-                                <p>메뉴명_1</p>
-                                <p>서브 텍스트_1</p>
-                                <p>1km · 일식</p>
+                                <p>지리산 하이킹</p>
+                                <p>⭐ 4.5</p>
+                                <p>3km 4인 구성</p>
                                 <div>
-                                    <p>50%</p>
+                                    <p>20%</p>
                                     <p>&nbsp</p>
-                                    <p>7,000원</p>
+                                    <p>32,000원</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="contentDetailPage_1.html">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
+                            <div class="silde-img"><img src="images/c3.jpg"></div>
                             <div class="slide-text">
-                                <p>메뉴명_1</p>
-                                <p>서브 텍스트_1</p>
-                                <p>1km · 일식</p>
+                                <p>변산 해수욕장</p>
+                                <p>⭐ 4.4</p>
+                                <p>5km 2인 구성</p>
                                 <div>
-                                    <p>50%</p>
+                                    <p>35%</p>
                                     <p>&nbsp</p>
-                                    <p>7,000원</p>
+                                    <p>24,000원</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="contentDetailPage_1.html">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
+                            <div class="silde-img"><img src="images/c2.jpg"></div>
                             <div class="slide-text">
-                                <p>메뉴명_1</p>
-                                <p>서브 텍스트_1</p>
-                                <p>1km · 일식</p>
+                                <p>부안 체험농장</p>
+                                <p>⭐ 4.8</p>
+                                <p>2km 2인 구성</p>
                                 <div>
-                                    <p>50%</p>
+                                    <p>40%</p>
                                     <p>&nbsp</p>
-                                    <p>7,000원</p>
+                                    <p>12,000원</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="contentDetailPage_1.html">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
-                            <div class="slide-text">
-                                <p>메뉴명_1</p>
-                                <p>서브 텍스트_1</p>
-                                <p>1km · 일식</p>
+                            <div class="silde-img"><img src="images/c4.jpg"></div>
+                                <div class="slide-text">
+                                <p>무등산 등산길</p>
+                                <p>⭐ 4.5</p>
+                                <p>1.5km 2인 구성</p>
                                 <div>
-                                    <p>50%</p>
+                                    <p>30%</p>
                                     <p>&nbsp</p>
-                                    <p>7,000원</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="contentDetailPage_1.html">
-                            <div class="silde-img"><img src="images/cody05.jpg"></div>
-                            <div class="slide-text">
-                                <p>메뉴명_1</p>
-                                <p>서브 텍스트_1</p>
-                                <p>1km · 일식</p>
-                                <div>
-                                    <p>50%</p>
-                                    <p>&nbsp</p>
-                                    <p>7,000원</p>
+                                    <p>20,000원</p>
                                 </div>
                             </div>
                         </a>
@@ -193,13 +176,11 @@
                 <div><img src="images/icon/arrow.svg"></div>
             </div>
             <div class="swiper-container trip-theme-Swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
-                    <div class="swiper-slide"><img src="images/DSC017362.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
-                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
-                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
-                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
-                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
+                <div class="swiper-wrapper" style="text-align: center;">
+                    <div class="swiper-slide"><img src="images/abcd/c1.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
+                    <div class="swiper-slide"><img src="images/abcd/c3.jpg"><span>독특한 공간 숙소</span></div>
+                    <div class="swiper-slide"><img src="images/abcd/c2.jpg"><span>집 전체 숙소</span></div>
+                    <div class="swiper-slide"><img src="images/abcd/c4.jpg"><span>반려동물 동반 가능 숙소</span></div>
                 </div>
             </div>
         </section>
@@ -214,12 +195,12 @@
             </div>
             <div class="swiper-container trip-theme-Swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
-                    <div class="swiper-slide"><img src="images/DSC017362.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
-                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
-                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
-                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
-                    <div class="swiper-slide"><img src="images/cody05.jpg"><span>자연생활을 만끽할 수 있는 숙소</span></div>
+                    <div class="swiper-slide"><img style="object-fit: contain;" src="images/review/차박노지 (1).png"></div>
+                    <div class="swiper-slide"><img style="object-fit: contain;" src="images/review/차박노지 (2).png"></div>
+                    <div class="swiper-slide"><img style="object-fit: contain;" src="images/review/차박노지 (3).png"></div>
+                    <div class="swiper-slide"><img style="object-fit: contain;" src="images/review/차박노지 (4).png"></div>
+                    <div class="swiper-slide"><img style="object-fit: contain;" src="images/review/체험활동 (1).png"></div>
+                    <div class="swiper-slide"><img style="object-fit: contain;" src="images/review/체험활동 (2).png"></div>
                 </div>
             </div>
         </section>
@@ -227,19 +208,19 @@
 
         <!-- Bottom Menu Bar -->
         <div id="bottom-menu">
-            <div><a href="mainPage_1.html"><img src="images/icon/home_icon.svg">
-                    <div>홈</div>
-                </a></div>
-            <div><a href="nearShopPage_1.html"><img src="images/icon/map_icon.svg">
-                    <div>내 주변</div>
-                </a></div>
-            <div><a href="orderHistory.html"><img src="images/icon/order_icon.svg">
-                    <div>커뮤니티</div>
-                </a></div>
-            <div><a href="myPage_1.html"><img src="images/icon/my_icon.svg">
-                    <div>나의 네트</div>
-                </a></div>
-        </div>
+            <div><a href="main_Page_1.html"><img src="images/icon/home_icon.svg">
+                <div>홈</div>
+              </a></div>
+            <div><a href="http://52.79.130.156/main/"><img src="images/icon/map_icon.svg">
+                <div>내 주변</div>
+              </a></div>
+            <div><a href="order_History.html"><img src="images/icon/order_icon.svg">
+                <div>커뮤니티</div>
+              </a></div>
+            <div><a href="my_Page_1.html"><img src="images/icon/my_icon.svg">
+                <div>나의 네트</div>
+              </a></div>
+          </div>
 
 
 	</div>

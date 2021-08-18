@@ -199,10 +199,12 @@ body {
 }
 #index-content .logo {
   position: relative;
-  width: 100%;
   height: auto;
   max-width: 490px;
   max-height: 490px;
+  width: 50%;
+  margin-top: 20%;
+  margin-bottom: 50%;
 }
 #index-content h3 {
   text-align: left;

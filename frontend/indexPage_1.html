@@ -6,12 +6,31 @@
 	<link rel="stylesheet" href="assets/css/my_page.css" />
   <title>Index Page</title>
 </head>
+<style>
+  body {
+    text-align: center;
+    position: relative;
+  }
+  body::after {
+    width: 100%;
+    height: 100%;
+    content: ""; /* 배경이미지로 채우질 예정 */
+    background-image: url(images/startScreen.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+</style>
 <body>
   <div id="wrap">
     <!-- Not Logged In Content -->    
     <section id= index-content>
-      <img class="logo" src="images/gray_box.png">
-      <h3>오늘 네트가 처음이신가요?</h3>
+      <img class="logo" src="images/logo.png">
+      <h3 style="color: white;">오늘 네트가 처음이신가요?</h3>
       <div class="content">
         <a href="loginPage_1.html">
           <div class="c-1"><span>차박노지</span><span>바로가기</span><img src="images/icon/Group.svg"></div>
@@ -32,7 +51,7 @@
       <div><a href="main_Page_1.html"><img src="images/icon/home_icon.svg">
           <div>홈</div>
         </a></div>
-      <div><a href="near_Shop_Page_1.html"><img src="images/icon/map_icon.svg">
+      <div><a href="http://52.79.130.156/main/"><img src="images/icon/map_icon.svg">
           <div>내 주변</div>
         </a></div>
       <div><a href="order_History.html"><img src="images/icon/order_icon.svg">
