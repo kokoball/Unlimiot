@@ -1,6 +1,10 @@
 from django.shortcuts import render
 
 
+def main(request):
+    return render(request, 'main_app/mainPage_1.html')
+
+
 def index(request):
     return render(request, 'main_app/nearShopPage_1.html')
 
