@@ -1,4 +1,4 @@
-#!/home/ubuntu/www/Unlimiot/backend/unlimiot_be/venv_be/bin/python
+#!/workspace/Unlimiot/11/backend/unlimiot_be/venv_be/bin/python
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

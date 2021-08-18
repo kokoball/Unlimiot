@@ -1,4 +1,4 @@
-#!/home/ubuntu/www/Unlimiot/backend/unlimiot_be/venv_be/bin/python
+#!/workspace/Unlimiot/11/backend/unlimiot_be/venv_be/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
