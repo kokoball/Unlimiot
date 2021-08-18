@@ -14,9 +14,11 @@
 [![Video Label](http://img.youtube.com/vi/8W-t5IWbBo4/0.jpg)](https://youtu.be/8W-t5IWbBo4)
 <br>
 
+
 ## 개발환경
 * Ubuntu 18.04 LTS
 <br>
+
 
 ## 기술 스택
 * Python 3.7.4
@@ -29,7 +31,6 @@
 * AWS EC2
 * AWS RDS
 <br>
-
 
 
 ## 팀원별 역할 
