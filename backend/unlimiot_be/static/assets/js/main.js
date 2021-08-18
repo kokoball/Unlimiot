@@ -1,110 +1,117 @@
-"use strict";
-jQuery(document).ready(function ($) {
+/*
+	Snapshot by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
 
-//for Preloader
+(function($) {
 
-    $(window).load(function () {
-        $("#loading").fadeOut(500);
-    });
+	skel.breakpoints({
+		xlarge: '(max-width: 1680px)',
+		large: '(max-width: 1280px)',
+		medium: '(max-width: 980px)',
+		small: '(max-width: 736px)',
+		xsmall: '(max-width: 480px)'
+	});
 
+	$(function() {
 
-    /*---------------------------------------------*
-     * Mobile menu
-     ---------------------------------------------*/
-    $('#navbar-menu').find('a[href*=#]:not([href=#])').click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: (target.offset().top - 80)
-                }, 1000);
-                if ($('.navbar-toggle').css('display') != 'none') {
-                    $(this).parents('.container').find(".navbar-toggle").trigger("click");
-                }
-                return false;
-            }
-        }
-    });
+		var	$window = $(window),
+			$body = $('body');
 
+		// Disable animations/transitions until the page has loaded.
+			$body.addClass('is-loading');
 
+			$window.on('load', function() {
+				window.setTimeout(function() {
+					$body.removeClass('is-loading');
+				}, 100);
+			});
 
-    /*---------------------------------------------*
-     * WOW
-     ---------------------------------------------*/
+		// Fix: Placeholder polyfill.
+			$('form').placeholder();
 
-    var wow = new WOW({
-        mobile: false // trigger animations on mobile devices (default is true)
-    });
-    wow.init();
+		// Prioritize "important" elements on medium.
+			skel.on('+medium -medium', function() {
+				$.prioritize(
+					'.important\\28 medium\\29',
+					skel.breakpoint('medium').active
+				);
+			});
 
-// magnificPopup
-
-    $('.popup-img').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
-
-    $('.video-link').magnificPopup({
-        type: 'iframe'
-    });
-
-
-
-// slick slider active Home Page Tow
-    $(".hello_slid").slick({
-        dots: true,
-        infinite: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        prevArrow: "<i class='icon icon-chevron-left nextprevleft'></i>",
-        nextArrow: "<i class='icon icon-chevron-right nextprevright'></i>",
-        autoplay: true,
-        autoplaySpeed: 2000
-    });
-    
-    
-    
-    $(".business_items").slick({
-        dots: true,
-        infinite: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        prevArrow: "<i class='icon icon-chevron-left nextprevleft'></i>",
-        nextArrow: "<i class='icon icon-chevron-right nextprevright'></i>",
-        autoplay: true,
-        autoplaySpeed: 2000
-    });
+		//swipe
+		if($('.main-slide-wrapper')){
+			var swiper = new Swiper('.swiper-container', {
+				slidesPerView: 'auto',
+				spaceBetween: 30,
+				pagination: {
+				  el: '.swiper-pagination',
+				  clickable: true,
+				},
+			  });
+		}
 
 
+		// Scrolly.
+			$('.scrolly').scrolly();
+
+		// user_content.
+			$('#content5').each(function() {
+
+				var	$user_content = $(this),
+					$content = $user_content.find('.content');
+
+				// Poptrox.
+					$content.poptrox({
+						usePopupCaption: true
+					});
+
+				// Tabs.
+					$user_content.each( function() {
+
+						var $this = $(this),
+							$tabs = $this.find('.User-tabs a'),
+							$media = $this.find('.media');
+
+						$tabs.on('click', function(e) {
+
+							var $this = $(this),
+								tag = $this.data('tag');
+
+							// Prevent default.
+							 	e.preventDefault();
+
+							// Remove active class from all tabs.
+								$tabs.removeClass('active');
+
+							// Reapply active class to current tab.
+								$this.addClass('active');
+
+							// Hide media that do not have the same class as the clicked tab.
+								$media
+									.fadeOut('fast')
+									.each(function() {
+
+										var $this = $(this);
+
+										if ($this.hasClass(tag))
+											$this
+												.fadeOut('fast')
+												.delay(200)
+												.queue(function(next) {
+													$this.fadeIn();
+													next();
+												});
+
+									});
+
+						});
+
+					});
 
 
-//---------------------------------------------
-// Scroll Up 
-//---------------------------------------------
+			});
 
-    $('.scrollup').click(function () {
-        $("html, body").animate({scrollTop: 0}, 1000);
-        return false;
-    });
+	});
 
-
-
-
-
-
-
-
-
-
-
-    //End
-
-});
-
-
-
+})(jQuery);
