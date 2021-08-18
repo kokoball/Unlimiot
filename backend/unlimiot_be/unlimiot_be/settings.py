@@ -24,8 +24,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-duc0*@p&e)&pd7n@c*36xnug$anik6k2toz7j4v!-@1l1v8v_r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
+if os.getcwd() == '/home/ubuntu/www2/Unlimiot/backend/unlimiot_be/unlimiot_be':
+    DEBUG = False
+    print('For production, running debug mode == False')
+    
+else:
+    DEBUG = True
+    print('For Test run, running debug mod == True')
+    
+    
 ALLOWED_HOSTS = ['*']
 
 
@@ -89,7 +96,7 @@ if os.getcwd() == '/home/ubuntu/www2/Unlimiot/backend/unlimiot_be/unlimiot_be':
        'PORT': '5432',
        }
     }
-    print('Integrating AWS EC2 with AWS RDS')
+    print('You are running this program on AWS.')
     
 else:
     DATABASES = {
@@ -99,8 +106,6 @@ else:
         }
     }
     print('Test run')
-
-
 
 
 
