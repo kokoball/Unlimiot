@@ -1,24 +1,24 @@
 var data = [
     {
-      title: '얌샘김밥',
+      title: '노니네 농장',
       partnership: '만원이상 결제시 5% 할인',
       lat: '36.204368078005096',
       lng: '127.15877054637959',
       img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
     },{
-      title: '카페지인',
+      title: '원쓰네 농장',
       partnership: '2잔 이상 구매시 10% 할인',
       lat: '35.9288460533908',
       lng: '127.19967287899959',
       img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
     },{
-      title: '카페지인',
+      title: '벳노니의 농장',
       partnership: '2잔 이상 구매시 10% 할인',
       lat: '35.829422111357644',
       lng: '127.08241952548886',
       img: '<img src="{% static "assets/images/restaurant/restaurant1.png" %}" >'
     },{
-      title: '카페지인2',
+      title: '노니스토리',
       partnership: '2잔 이상 구매시 10% 할인',
       lat: '35.43936755032759',
       lng: '127.09605364060548',
