@@ -11,7 +11,7 @@
 
 
 ## 발표 영상 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8W-t5IWbBo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Video Label](http://img.youtube.com/vi/8W-t5IWbBo4/0.jpg)](https://youtu.be/8W-t5IWbBo4)
 <br>
 
 ## 개발환경
