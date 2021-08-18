@@ -1,12 +1,22 @@
+from django.http import JsonResponse
 from django.shortcuts import render
+from django.conf import settings
+import datetime
+import json
+
+
+f = open("static/chabka_data.csv", 'r', encoding='UTF8')
+l = []
+lines = f.readlines()
+for line in lines:
+    l.append(line.split(','))
+f.close()
+
+data1 = l[1:15]
 
 
 def mainp(request):
-    return render(request, 'main_app/mainPage_1.html')
-
-
-def index(request):
-    return render(request, 'main_app/mainRegionSelectionPage_1.html')
+    return render(request, 'main_app/mainPage_1.html', {'data1':data1})
 
 
 def nsp(request):
@@ -36,14 +46,7 @@ def mrs(request):
 def sp1(request):
     return render(request, 'main_app/searchPage_1.html')
 
-# f = open("static/food.csv", 'r', encoding='UTF8')
-# l = []
-# lines = f.readlines()
-# for line in lines:
-#     l.append(line.split(','))
-# f.close()
 
-# data1 = l[1:44]
 
 # # Create your views here.
 # def index(request):
