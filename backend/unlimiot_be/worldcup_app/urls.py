@@ -1,8 +1,9 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import index, main, style_1, style_2, style_3, style_4, style_5, style_6
+from .views import like_style, style_1, style_2, style_3, style_4, style_5, style_6
 
 urlpatterns = [
+    path('like_style', like_style, name='like_style'),
     path('style_1', style_1, name='style_1'),
     path('style_2', style_2, name='style_2'),
     path('style_3', style_3, name='style_3'),

@@ -20,5 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('main/', include('main_app.urls')),
     path('worldcup/', include('worldcup_app.urls')),
-
+    path('history/', include('history_app.urls')),
 ]
