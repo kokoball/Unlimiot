@@ -2,7 +2,7 @@ db.sqlite3
 /media
 /staticfiles/media
 /venv_be
-__pyache__/
+__pycache__/
 django.log
 *.log
 .cache
