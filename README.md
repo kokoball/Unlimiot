@@ -14,6 +14,7 @@
 <br>
 
 ## 서비스 소개
+![KakaoTalk_20210819_005543682](https://user-images.githubusercontent.com/68317603/129941826-dd244f71-fa8c-4158-a7dd-bbcee59d4310.jpg)
 
 <br>
 
