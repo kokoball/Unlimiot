@@ -1,4 +1,4 @@
-# Unlimiot(언리미오, Unlimited idiots, 11th team) Repository
+# 언리미오(Unlimiot, Unlimited idiots, 11th team) Repository
 
 # 네트(Nature Trip, Network)
  - 해커톤명 : <a href="https://oasis-hackathon.kr/">제2회 오아시스 해커톤</a>
