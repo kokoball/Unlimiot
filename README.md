@@ -1,12 +1,13 @@
 # Unlimiot(언리미오, Unlimited idiots, 11th team) Repository
 
-![KakaoTalk_20210819_005543682](https://user-images.githubusercontent.com/68317603/129941826-dd244f71-fa8c-4158-a7dd-bbcee59d4310.jpg)
-
 # 네트(Nature Trip, Network)
- - 해커톤명 : <a href="https://oasis-hackathon.kr/">2nd OASIS Hackathon</a>
+ - 해커톤명 : <a href="https://oasis-hackathon.kr/">제2회 오아시스 해커톤</a>
  - 팀명 : 언리미오(Unlimiot)(<a href="https://github.com/kokoball">고병표</a>, <a href="https://github.com/jinhgoh">고진형</a>, 백원기, 최명진)
  - 기간 : 2021.08.12 ~ 2021.08.18
 <br>
+
+![KakaoTalk_20210819_005543682](https://user-images.githubusercontent.com/68317603/129941826-dd244f71-fa8c-4158-a7dd-bbcee59d4310.jpg)
+
 
 ## 발표 영상 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wYb7vtuGvKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
